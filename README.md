@@ -56,9 +56,6 @@ To preview the website locally on your machine:
 ```bash
 # Using Python 3 built-in HTTP server
 python3 -m http.server 8000
-
-# Or with RTK token-optimized proxy:
-rtk python3 -m http.server 8000
 ```
 
 Open `http://localhost:8000` in your web browser.
@@ -73,9 +70,9 @@ When compiling new versions of the PDF documents:
 1. Copy the generated `cv.pdf`, `resume.pdf`, or `coverletter.pdf` into `assets/docs/`.
 2. Commit and push the changes to `main`:
    ```bash
-   rtk git add assets/docs/
-   rtk git commit -m "Update compiled CV and resume PDFs"
-   rtk git push origin main
+   git add assets/docs/
+   git commit -m "Update compiled CV and resume PDFs"
+   git push origin main
    ```
 3. GitHub Pages will deploy the updated documents automatically.
 
